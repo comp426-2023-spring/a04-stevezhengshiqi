@@ -41,12 +41,12 @@ app.get("/app/rpsls/play/", (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.body.shot)));
 });
 
-app.get("/app/rps/play/:shot", (req, res) => {
+app.get("/app/rps/play/:shot/", (req, res) => {
     res.status(200).send(JSON.stringify(rps(req.params.shot)));
 });
 
 
-app.get("/app/rpsls/play/:shot", (req, res) => {
+app.get("/app/rpsls/play/:shot/", (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.params.shot)));
 });
 
