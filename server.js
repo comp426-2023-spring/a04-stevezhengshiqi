@@ -1,6 +1,6 @@
 import express from "express";
 import minimist from "minimist";
-import { rps, rpsls } from "./lib/repls.js";
+import { rps, rpsls } from "./lib/repsls.js";
 
 const app = express();
 const args = minimist(process.argv.slice(2));
